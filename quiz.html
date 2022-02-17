@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quiz</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/logo2.png">
+</head>
+<body>
+
+
+	
+	<nav class="menu-nav">
+		<ul>
+			<li class="btnimg">
+				<a href="index.html">
+				<img src="img/logo2.png" alt="" class="navimg">
+			</a></li>
+			<li class="btn">
+				<a href="index.html">
+					Accueil
+				</a>
+			</li>
+			<li class="btn">
+				<a href="psg.html">
+					Les héros
+				</a>
+			</li>
+			
+			<li class="btn">
+				<a href="download.html">
+					Acheter
+				</a>
+			</li>
+
+			<li class="btn">
+				<a href="quiz.html">
+					Quiz
+				</a>
+			</li>
+
+			<li class="btn">
+				<a href="contact.html">
+					Nous contacter
+				</a>
+			</li>
+		</ul>
+	</nav>
+	<br>
+	<br>
+
+	<div class="border-accueil">
+
+	<h1 class="main">Quiz</h1>
+
+	<div class="qcm">
+		<script src="js/quiz.js"></script>
+		
+		<img src="img/Overwatch-Character-PNG-Image-File.png" alt="" class="imgov">
+
+
+		<FORM name="qcm" action="" class="qcmbg">
+		<!-- les boutons d'un meme groupe doivent avoir le meme nom -->
+		<br>Combien de y'a t'il sur le jeu ?<br>
+		<br><input type= "radio" name= "q1"> 34 héros en tout <input type= "radio" name= "q1"> 32 héros en tout</br><br>
+		<br>Quand est sorti le jeu sur PS4, PC, et Xbox ?<br>
+		<br><input type= "radio" name= "q2"> 24 mai 2016 <input type= "radio" name= "q2"> 28 avril 2020 </br><br>
+		<br>A quoi correspondant ce logo ?<br><br>
+		<img src="img/tank.png" class="tankquizimg"><br>
+		<br><input type= "radio" name= "q3"> Dégâts <input type= "radio" name= "q3"> Tank </br><br>
+		<br>Quand est sorti le jeu sur switch ?<br>
+		<br><input type= "radio" name= "q4"> Avant la sortie sur PS4/PC/XBOX <input type= "radio" name= "q4"> Après la sortie sur PS4/PC/XBOX </br><br>
+		<br>Overwatch est un jeu de simulation<br>
+		<br><input type= "radio" name= "q5"> Vrai <input type= "radio" name= "q5"> Faux </br><br>
+		
+			<br>
+			<br>
+
+		<!-- passer l'ordre du bouton correspondant a la reponse exacte, en commencant par 0 -->
+		<input type="button" value="Répondre" onclick= "result(1, 0, 1, 1, 1);" class="qcmbtn"><input type="reset" value="Recommencer" class="qcmbtn">
+
+		</form>
+	</div>
+
+</div>
+
+	
+	<footer>
+		<p class="footer">Copyright &copy; Fabrice Cannan - 2021 / 2022</p>
+	</footer>
+
+	<script src="js/quiz.js"></script>
+</body>
+</html>
